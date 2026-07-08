@@ -192,12 +192,65 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-.placeholder {
-  color: var(--muted);
-  font-style: italic;
+.wrapper h3 {
+  color: var(--purple);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1.75rem 0 0.75rem;
 }
 
-.photo-grid {
+.wrapper ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.wrapper ul li {
+  margin-bottom: 0.5rem;
+}
+
+.cfp-meta {
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+}
+
+.cfp-meta p {
+  margin-bottom: 0.35rem;
+}
+
+.topic-block {
+  margin-bottom: 1.25rem;
+}
+
+.topic-block strong {
+  color: var(--purple);
+}
+
+.content-list li {
+  list-style: disc;
+}
+
+.committee-section {
+  margin-bottom: 1.75rem;
+}
+
+.committee-section h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.committee-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.35rem 1.5rem;
+}
+
+.committee-list li {
+  margin-bottom: 0.25rem;
+}
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
@@ -210,6 +263,21 @@ a:hover {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.photo-grid figure:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.photo-grid a {
+  display: block;
+  text-decoration: none;
+}
+
+.photo-grid a:hover {
+  text-decoration: none;
 }
 
 .photo-grid img {
@@ -217,12 +285,22 @@ a:hover {
   height: 180px;
   object-fit: cover;
   display: block;
+  transition: opacity 0.2s ease;
+}
+
+.photo-grid figure:hover img {
+  opacity: 0.92;
 }
 
 .photo-grid figcaption {
   padding: 0.6rem 0.75rem;
-  font-size: 0.82rem;
-  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.photo-grid figcaption a {
+  color: var(--purple);
 }
 
 table.dates-table {
