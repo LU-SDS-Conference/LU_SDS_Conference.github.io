@@ -20,4 +20,4 @@ See deployment steps in project documentation or the setup guide provided by you
 
 ## Images
 
-Campus photos are sourced from [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Lingnan_University) (Creative Commons licensed).
+Campus photos are stored in the `images/` folder (`campus-1.jpg`, `campus-2.jpg`, `campus-3.jpg`).
